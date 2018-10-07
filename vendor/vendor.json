@@ -1,0 +1,35 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "0hKJQn1uFpZS4fIHflP9Lyl2BjE=",
+			"path": "github.com/grokify/html-strip-tags-go",
+			"revision": "e9e44961e26f513866063f54bf85070db95600f7",
+			"revisionTime": "2018-09-07T06:33:47Z"
+		},
+		{
+			"checksumSHA1": "AChjy2dBFBtBT+RLIkifus6Dtk0=",
+			"path": "github.com/paulrosania/go-charset/charset",
+			"revision": "621bb39fcc835dce592e682f5073025d0169587b",
+			"revisionTime": "2015-10-28T00:00:31Z"
+		},
+		{
+			"checksumSHA1": "KArOvAnzx26K7tmLxnnwDsYtwoE=",
+			"path": "github.com/paulrosania/go-charset/data",
+			"revision": "621bb39fcc835dce592e682f5073025d0169587b",
+			"revisionTime": "2015-10-28T00:00:31Z"
+		},
+		{
+			"checksumSHA1": "6H0ZruqYuZGAOWo5/h6eba8nww0=",
+			"path": "github.com/ungerik/go-rss",
+			"revision": "e6dab863fc9307aafd7dcf279c69356f3c603cf8",
+			"revisionTime": "2018-07-30T05:38:43Z"
+		}
+	],
+	"heroku": {
+        "install" : [ "./..." ],
+        "goVersion": "go1.11"
+    },
+	"rootPath": "short-news"
+}

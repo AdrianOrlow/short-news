@@ -1,0 +1,1 @@
+web: short-news
