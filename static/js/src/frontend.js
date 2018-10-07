@@ -36,8 +36,8 @@ function checkForm() {
 
     j = 0;
     for (i = 0; i < media.length - 1; i++) {
-        media = document.getElementById(media[i]);
-        if (media.checked == true) {
+        mediaX = document.getElementById(media[i]);
+        if (mediaX.checked == true) {
             j++
         }
     }
