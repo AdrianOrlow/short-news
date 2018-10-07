@@ -21,7 +21,7 @@ function checkForm() {
     var qInput = document.getElementById("quantity");
 
     var j = 0;
-    for (i = 0; i < categories.length; i++) {
+    for (i = 0; i < categories.length-1; i++) {
         category = document.getElementById(categories[i]);
         if (category.checked == true) {
             j++
