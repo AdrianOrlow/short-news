@@ -14,8 +14,8 @@ function newsDescs() {
 }
 
 function checkForm() {
-    var categories = ["polandCat", "worldCat", "economicsCat", "cultureCat", "sportsCat"]
-    var media = ["tvn24Med", "rmf24Med", "polsatnewsMed"]
+    var categories = ["polandCat", "worldCat", "economicsCat", "cultureCat", "sportsCat"];
+    var media = ["tvn24Med", "rmf24Med", "polsatnewsMed"];
     var catBtn = document.getElementById("catBtn");
     var medBtn = document.getElementById("medBtn");
     var qInput = document.getElementById("quantity");
@@ -35,7 +35,7 @@ function checkForm() {
     }
 
     j = 0;
-    for (i = 0; i < media.length - 1; i++) {
+    for (i = 0; i < media.length; i++) {
         mediaX = document.getElementById(media[i]);
         if (mediaX.checked == true) {
             j++
