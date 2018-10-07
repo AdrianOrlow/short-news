@@ -69,11 +69,6 @@ func results(w http.ResponseWriter, r *http.Request) {
 			"rmf24Med":      "https://www.rmf24.pl/fakty/swiat/feed",
 			"polsatnewsMed": "http://www.polsatnews.pl/rss/swiat.xml",
 		},
-		"politicsCat": {
-			"tvn24Med":      "https://www.tvn24.pl/wiadomosci-z-kraju,3.xml",
-			"rmf24Med":      "https://www.rmf24.pl/fakty/polska/feed",
-			"polsatnewsMed": "http://www.polsatnews.pl/rss/polska.xml",
-		},
 		"economicsCat": {
 			"tvn24Med":      "https://www.tvn24.pl/biznes-gospodarka,6.xml",
 			"rmf24Med":      "https://www.rmf24.pl/ekonomia/feed",

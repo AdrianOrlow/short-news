@@ -4,23 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="">
-    <meta property="og:url" content="">
+    <meta name="theme-color" content="#fff">
+    <meta property="og:url" content="https://short-news.herokuapp.com">
     <meta property="og:type" content="website">
     <meta property="og:title" content="ShortNews">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <title>ShortNews</title>
+    <meta property="og:description" content="Najnowsze skrócone wiadomości w jednym miejscu">
+    <meta property="og:image" content="static/img/thumbnails/results.png">
+    <title>ShortNews - wyniki</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="img/ico/favicon.ico">
 
     <!-- Google Analytics -->
 
 
     <!-- Main CSS -->
-    <!-- <link rel="stylesheet" href="static/css/dist/style.min.css"/> -->
-    <link rel="stylesheet" href="static/css/src/style.css" />
+    <link rel="stylesheet" href="static/css/dist/style.min.css" />
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="static/css/dist/normalize.min.css" />
@@ -75,7 +74,10 @@
         {{end}}
     </main>
     <!-- Front end -->
-    <script src="../static/js/src/frontend.js"></script>
+    <script src="static/js/dist/frontend.min.js"></script>
+    <script>
+        newsDescs();
+    </script>
 </body>
 
 </html>

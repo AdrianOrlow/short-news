@@ -1,8 +1,14 @@
-# ShortNews
+# myLibrary
 
-### ShortNews is a simple website, which provides news shortcuts. Made with golang and vanilla css.
+### ShortNews is a simple website, which provides news shortcuts. Made with Golang and vanilla CSS.
 
-Project demo is available at:
+Project demo is available at: https://short-news.herokuapp.com/.
+
+# Getting started
+
+```
+Soon
+```
 
 # License
 
