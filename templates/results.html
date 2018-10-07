@@ -20,7 +20,7 @@
 
     <!-- Main CSS -->
     <!-- <link rel="stylesheet" href="static/css/dist/style.min.css"/> -->
-    <link rel="stylesheet" href="../static/css/src/style.css" />
+    <link rel="stylesheet" href="static/css/src/style.css" />
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="static/css/dist/normalize.min.css" />
@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <a href="https://github.com/TheAdrik" class="github-corner" aria-label="View source on GitHub"><svg width="80"
+    <a href="https://github.com/TheAdrik/ShortNews" class="github-corner" aria-label="View source on GitHub"><svg width="80"
             height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
             aria-hidden="true">
             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -44,103 +44,35 @@
                 fill="currentColor" class="octo-body"></path>
         </svg></a>
     <header class="header">
-        <a href="main.html">
+        <a href="/">
             <h1 class="header__logo">ShortNews</h1>
         </a>
         </div>
     </header>
     <main class="main">
-        <p class="news--topic">Gospodarka</p>
+        {{range .Categories}}
+        <p class="news--topic">{{.Name}}</p>
         <div class="news">
+            {{range .Articles}}
             <div class="news--el">
-                <div class="news--main">
-                    Orlen: Rynek oleju napędowego powiększył się o 30 proc.
-                </div>
+                <a href="{{.Link}}" class="news--main">
+                    {{.Title}}
+                </a>
                 <div class="news--text">
-                    Ambasador Arabii Saudyjskiej w Turcji powiedział władzom w Ankarze, że nie ma żadnych informacji na
-                    temat saudyjskiego
-                    dziennikarza, który zaginął po wejściu przed dwoma dniami do konsulatu saudyjskiego w Stambule -
-                    podała turecka
-                    telewizja NTV.
+                    {{.Desc}}
                 </div>
                 <div class="news--desc">
                     <div class="news--media">
-                        Źrodło: <span class="media--highlight">RMF FM</span>
+                        Źrodło: <span class="media--highlight">{{.Source}}</span>
                     </div>
                     <div class="news--expand fas fa-angle-down">
 
                     </div>
                 </div>
             </div>
-            <div class="news--el">
-                <div class="news--main">
-                    Eksperci ostrzegają: Czekają nas kolejne podwyżki cen paliw!
-                </div>
-                <div class="news--desc">
-                    <div class="news--media">
-                        Źrodło: <span class="media--highlight">TVP INFO</span>
-                    </div>
-                    <div class="news--expand fas fa-angle-down">
-
-                    </div>
-                </div>
-            </div>
-            <div class="news--el">
-                <div class="news--main">
-                    Andrzej Sapkowski chce 60 mln zł za "Wiedźmina"
-                </div>
-                <div class="news--desc">
-                    <div class="news--media">
-                        Źrodło: <span class="media--highlight">TVN24</span>
-                    </div>
-                    <div class="news--expand fas fa-angle-down">
-
-                    </div>
-                </div>
-            </div>
+            {{end}}
         </div>
-        <p class="news--topic">Świat</p>
-        <div class="news">
-            <div class="news--el">
-                <div class="news--main">
-                    Zabójstwo Iwony Cygan. Sąd uchylił areszty 15 oskarżonym
-                </div>
-                <div class="news--desc">
-                    <div class="news--media">
-                        Źrodło: <span class="media--highlight">RMF FM</span>
-                    </div>
-                    <div class="news--expand fas fa-angle-down">
-
-                    </div>
-                </div>
-            </div>
-            <div class="news--el">
-                <div class="news--main">
-                    Eksperci ostrzegają: Czekają nas kolejne podwyżki cen paliw!
-                </div>
-                <div class="news--desc">
-                    <div class="news--media">
-                        Źrodło: <span class="media--highlight">TVP INFO</span>
-                    </div>
-                    <div class="news--expand fas fa-angle-down">
-
-                    </div>
-                </div>
-            </div>
-            <div class="news--el">
-                <div class="news--main">
-                    Andrzej Sapkowski chce 60 mln zł za "Wiedźmina"
-                </div>
-                <div class="news--desc">
-                    <div class="news--media">
-                        Źrodło: <span class="media--highlight">TVN24</span>
-                    </div>
-                    <div class="news--expand fas fa-angle-down">
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{end}}
     </main>
     <!-- Front end -->
     <script src="../static/js/src/frontend.js"></script>

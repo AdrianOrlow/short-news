@@ -20,7 +20,7 @@
 
     <!-- Main CSS -->
     <!-- <link rel="stylesheet" href="static/css/dist/style.min.css"/> -->
-    <link rel="stylesheet" href="../static/css/src/style.css" />
+    <link rel="stylesheet" href="static/css/src/style.css" />
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="static/css/dist/normalize.min.css" />
@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <a href="https://github.com/TheAdrik" class="github-corner" aria-label="View source on GitHub"><svg width="80"
+    <a href="https://github.com/TheAdrik/ShortNews" class="github-corner" aria-label="View source on GitHub"><svg width="80"
             height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
             aria-hidden="true">
             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -44,27 +44,64 @@
                 fill="currentColor" class="octo-body"></path>
         </svg></a>
     <header class="header">
-        <a href="main.html">
+        <a href="/">
             <h1 class="header__logo">ShortNews</h1>
         </a>
         </div>
     </header>
     <main class="main">
         <form action="/results" method="POST">
-            <select class="select--category" multiple>
-                <option selected disabled>Wybierz kategorię</option>
-                <option>a</option>
-                <option>b</option>
-            </select>
 
-            <select class="select--media" multiple>
-                <option selected disabled>Wybierz media</option>
-                <option>a</option>
-                <option>b</option>
-            </select>
-            <div class="quantity--label">Ilość wiadomości dla każdej z kategorii:<input class="quantity--input" value="3"
-                    type="text"></div>
-            <div class="btn--generate" type="submit">Generuj</div>
+            <div class="category--select">Wybierz kategorie
+                <div class="dropdown">
+                    <input class="dropdown--checkbox" type="checkbox" name="polandCat" id="polandCat">
+                    <label class="dropdown--el" for="polandCat">
+                        Polska
+                    </label>
+                    <input class="dropdown--checkbox" type="checkbox" name="worldCat" id="worldCat">
+                    <label class="dropdown--el" for="worldCat">
+                        Świat
+                    </label>
+                    <input class="dropdown--checkbox" type="checkbox" name="politicsCat" id="politicsCat">
+                    <label class="dropdown--el" for="politicsCat">
+                        Polityka
+                    </label>
+                    <input class="dropdown--checkbox" type="checkbox" name="economicsCat" id="economicsCat">
+                    <label class="dropdown--el" for="economicsCat">
+                        Gospodarka
+                    </label>
+                    <input class="dropdown--checkbox" type="checkbox" name="cultureCat" id="cultureCat">
+                    <label class="dropdown--el" for="cultureCat">
+                        Kultura
+                    </label>
+                    <input class="dropdown--checkbox" type="checkbox" name="sportCat" id="sportCat">
+                    <label class="dropdown--el" for="sportCat">
+                        Sport
+                    </label>
+                </div>
+            </div>
+
+            <div class="select--media">Wybierz media
+                <div class="dropdown">
+                    <input class="dropdown--checkbox" type="checkbox" name="tvn24Med" id="tvn24Med">
+                    <label class="dropdown--el" for="tvn24Med">
+                        TVN24
+                    </label>
+                    <input class="dropdown--checkbox" type="checkbox" name="rmf24Med" id="rmf24Med">
+                    <label class="dropdown--el" for="rmf24Med">
+                        RMF24
+                    </label>
+                    <input class="dropdown--checkbox" type="checkbox" name="polsatnewsMed" id="polsatnewsMed">
+                    <label class="dropdown--el" for="polsatnewsMed">
+                        Polsat News
+                    </label>
+                </div>
+            </div>
+
+            <div class="quantity--label">Ilość wiadomości dla każdej z kategorii:<input name="quantity" class="quantity--input"
+                    value="3" type="text"></div>
+
+            <input class="btn--generate" type="submit" value="Generuj">
         </form>
     </main>
 </body>
