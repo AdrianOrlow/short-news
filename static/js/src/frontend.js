@@ -52,5 +52,5 @@ function checkForm() {
         document.querySelector("#mainForm").submit();
     } else {
         qInput.classList.add("btn--red");
-    }
+    } 
 }
