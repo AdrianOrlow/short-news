@@ -162,12 +162,7 @@ func results(w http.ResponseWriter, r *http.Request) {
 					rArticle := random(0, items)
 
 					c := channel.Item[rArticle]
-					article := Article{
-						Title: c.Title,
-						Desc: strip.StripTags(c.Description),
-						Source: rLink,
-						Link: c.Link
-					}
+					article := Article{Title: c.Title,Desc: strip.StripTags(c.Description),Source: rLink,Link: c.Link}
 
 					pageData.Categories[index].Articles = append(pageData.Categories[index].Articles, article)
 				}
