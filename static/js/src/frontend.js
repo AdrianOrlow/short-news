@@ -14,8 +14,8 @@ function newsDescs() {
 }
 
 function checkForm() {
-    var categories = ["polandCat", "worldCat", "economicsCat", "cultureCat", "sportsCat"];
-    var media = ["tvn24Med", "rmf24Med", "polsatnewsMed"];
+    var categories = ["polandCat", "worldCat", "economicsCat", "cultureCat", "sportsCat"]
+    var media = ["tvn24Med", "rmf24Med", "polsatnewsMed","wykopMed"]
     var catBtn = document.getElementById("catBtn");
     var medBtn = document.getElementById("medBtn");
     var qInput = document.getElementById("quantity");
