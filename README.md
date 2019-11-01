@@ -2,18 +2,26 @@
 
 ### ShortNews is a simple website, which provides news shortcuts. Made with Golang and vanilla CSS.
 
-Project demo is available at: https://short-news.herokuapp.com/.
+Project demo is available at: https://short-news.orlow.me/.
 
 # Getting started
-
+To set up the development, firstly clone this project
 ```
-Soon
+git clone https://github.com/AdrianOrlow/short-news.git
+cd short-news
 ```
-
+Then you can run it
+```
+go run main.go
+```
+Or create an executable file
+```
+go build
+```
 # License
 
 ```
-Copyright (c) 2018 Adrian Orłów
+Copyright (c) 2018-2019 Adrian Orłów
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
